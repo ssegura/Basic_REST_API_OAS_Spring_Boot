@@ -1,12 +1,16 @@
 package score.aiss.streamsschedule.model;
 
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
 
 public record LiveStream (
         String id,
         @NotEmpty(message = "Stream title is required")
+        @Size(min = 0, max = 20)
         String title,
+        @NotNull(message = "The description cannot be null")
         String description,
         String url,
         LocalDateTime startDate,

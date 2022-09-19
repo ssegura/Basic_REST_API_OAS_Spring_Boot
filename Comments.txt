@@ -1,0 +1,8 @@
+https://www.baeldung.com/spring-rest-openapi-documentation
+
+Documentation: https://springdoc.org/
+
+JSON documentation: http://localhost:8080/v3/api-docs/
+YAML documentation: http://localhost:8080/v3/api-docs.yaml
+Swagger UI: http://localhost:8080/swagger-ui.html
+
